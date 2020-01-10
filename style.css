@@ -1,0 +1,156 @@
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #FFF;
+    }
+
+@font-face {
+    font-family: Baton;
+    src: url("BatonTurbo-Regular.otf") format("opentype");
+    }
+
+.over {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 3;
+    pointer-events: none;
+    }
+
+img {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    }
+
+.wrap {
+    max-width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-TOP: 2vw;
+    float: left;
+    }
+
+
+
+.big {
+    max-width: 95vw;
+    }
+
+/*
+img {
+    max-width: 95vw;
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    }
+*/
+
+.mark {
+    /*
+    max-width: 20vw;
+    max-height: 20vw;
+    */
+    width: 600px;
+    max-width: 90vw;
+    position: fixed;
+    margin-top: 0;
+    right: 0;
+    padding: 5vw;
+    pointer-events: none;
+    }
+
+.margin {
+    height: 5vw;
+    width: 90vw;
+    display: inline-block;
+    margin:0;
+    padding: 0;
+    }
+
+.break {
+    float: left;
+    width: 100vw;
+    }
+
+p {
+    font-family: Baton;
+    font-size: 2vw;
+    color: #000;
+    padding: 0;
+    padding-bottom: 5vw;
+    }
+
+#left {
+    width: 50%;
+    float: left;
+    text-transform: uppercase;
+    }
+
+#right {
+    width: 50%;
+    float: right;
+    text-transform: uppercase;
+    }
+
+#text {
+    width: 100%%;
+    float: left;
+    }
+
+p.title {
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    text-align: left;
+    }
+
+p.logo {
+    margin-right: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    text-align: right;
+    }
+
+p.paragraph {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    text-align: left;
+    }
+
+p.sub {
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    font-size: 20px;
+    }
+
+
+a {
+    cursor: zoom-out;
+    }
+
+a:link,
+a:active,
+a:visited {
+    cursor: zoom-out;
+	color: #000;
+	border-bottom: none;
+	outline: none;
+    cursor: pointer;
+	}
+
+a:hover {
+    cursor: zoom-in;
+    }
