@@ -1,156 +1,202 @@
 html, 
 body {
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    background: #FFF;
+    
+    /* Center inline-block elements */
+    text-align: center;
+    
+    /* Remove inline-block margins */
+    font-size: 0px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    
+    /* background-image: url("img/background.png");
+    background-repeat: repeat; */
     }
 
-@font-face {
-    font-family: Baton;
-    src: url("BatonTurbo-Regular.otf") format("opentype");
+.about,
+.about-background {
+    cursor:  url(img/close.png), auto;
     }
 
-.over {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    z-index: 3;
-    pointer-events: none;
-    }
 
-img {
-    max-width: 100%;
+/* ------------------------------ Landing & Work ------------------------------ */
+
+.container,
+.work-container,
+.gridimage-margin {
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    }
-
-.wrap {
-    max-width: 96vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    margin-TOP: 2vw;
-    float: left;
+    width: 96vw;
+    display: inline-block;
     }
 
 
 
-.big {
-    max-width: 95vw;
-    }
-
-/*
-img {
-    max-width: 95vw;
-    margin-top: 2.5vw;
-    margin-left: 2.5vw;
-    margin-bottom: 0;
-    margin-right: 0;
-    padding: 0;
-    display: block;
-    float: left;
-    }
-*/
-
-.mark {
-    /*
-    max-width: 20vw;
-    max-height: 20vw;
-    */
-    width: 600px;
-    max-width: 90vw;
-    position: fixed;
-    margin-top: 0;
-    right: 0;
-    padding: 5vw;
-    pointer-events: none;
+.margin-vertical{
+    display: inline-block;
+    vertical-align: top;
+    width: 96vw;
+    height: 8vw;
     }
 
 .margin {
-    height: 5vw;
-    width: 90vw;
+    height:  2vw;
+    }
+
+.margin-horizontal {
     display: inline-block;
-    margin:0;
+    position: relative; 
+    float: left;
+    vertical-align: top;
+    width: 2vw;
+    height:2vw;
+    }
+
+.thumb-block{
+    display: inline-block;
+    /* Set position for hover-block */
+    position: relative; 
+    float: left;
+    }
+
+.hover-block {
+    
+    width:100%;
+    height: 100%;
+    position:absolute;
+    background:#F1f1f1;
+    display: none;
+    }
+
+/* Enable hover block */
+.thumb-block:hover .hover-block {
+    display: block;
+    
+    }
+
+.hover-block .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    }
+
+.cap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96vw;
     padding: 0;
     }
 
-.break {
-    float: left;
-    width: 100vw;
+.img-thumb {
+    max-width: 47vw;
     }
 
-p {
-    font-family: Baton;
-    font-size: 2vw;
+.img-project {
+    max-width: 96vw;
+    }
+
+.img-logo {
+    max-width: 20vw;
+    width: 20vw;
+    height: 5vw
+    }
+
+.logoblock{
+    display: inline-block;
+    vertical-align: top;
+    width: 96vw;
+
+    }
+
+
+
+    .text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
     color: #000;
     padding: 0;
-    padding-bottom: 5vw;
+    margin: 0; 
     }
 
-#left {
-    width: 50%;
-    float: left;
-    text-transform: uppercase;
+.bold {
+    font-weight: 400;
     }
 
-#right {
-    width: 50%;
-    float: right;
-    text-transform: uppercase;
+.hide-1600 {
+    display: none;
     }
 
-#text {
-    width: 100%%;
-    float: left;
+.show-1600 {
+    display: inline-block;
     }
 
-p.title {
-    margin-left: 5vw;
-    margin-top: 5vw;
-    margin-bottom: 0;
-    text-align: left;
+.project-title-1 {
+    display: none;
     }
 
-p.logo {
-    margin-right: 5vw;
-    margin-top: 5vw;
-    margin-bottom: 0;
-    text-align: right;
+.project-copy {
+    padding-right: 2.5vw;
     }
 
-p.paragraph {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 5vw;
-    margin-bottom: 0;
-    text-align: left;
+.home {
+    height: 100px;
+    display: inline-block;
+    text-align: center;
     }
 
-p.sub {
-    margin-left: 5vw;
-    margin-top: 5vw;
-    margin-bottom: 0;
-    font-size: 20px;
+.home:hover {
+    opacity: 0.5;
     }
 
+/* ------------------------------ Loading ------------------------------ */
 
-a {
-    cursor: zoom-out;
+.loading {
+  width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   display: block;
+   background-color: #FFF;
+   z-index: 10;
     }
+
+.loading-div {
+     position: fixed;
+     width: 500px;
+     height: 500px;
+     margin: 0 auto;
+     left: 50%;
+     top: 50%;
+     margin-left: -250px;
+     margin-top: -250px;
+    }
+
+/* ------------------------------ Links ------------------------------ */
 
 a:link,
 a:active,
-a:visited {
-    cursor: zoom-out;
+a:visited,
+.about-link {
 	color: #000;
+	text-decoration: none;
 	border-bottom: none;
 	outline: none;
     cursor: pointer;
 	}
 
-a:hover {
-    cursor: zoom-in;
-    }
+a:hover,
+.about-link:hover{
+	color: #F0F0F0;
+	}
+

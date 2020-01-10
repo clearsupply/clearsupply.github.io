@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+    
+    <!-- Title -->    
+<title>Clear Supply</title>
+
+    <!-- Favico -->
+<link rel="icon" href="/img/fav.ico" type="image/ico"/>
+
+    <!-- Meta tags -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/> 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+    <!-- Include CSS -->
+<link rel="stylesheet" type="text/css" href="/style.css"/>
+
+    <!-- Include jQuery latest -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+
+    <!-- Include Google Font -->
+<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+
+<script>
+
+    /* -------------------- Set .loading height to document height -------------------- */
+    
+    $(document).ready(function(){
+        $('.loading').height($(document).height());
+   });
+        
+    /* -------------------- Hide .loading -------------------- */
+        
+    $(window).load(function() {
+        $('.loading-div').fadeOut(500);
+            $('.loading-div').promise().done(function(){
+                $('.loading').fadeOut(500);
+            });
+        });
+    
+</script>
+
+    
+</head>
+
+<body>
+    
+<!-- Loader -->
+
+    <div class="loading">
+        <div class="loading-div"><img src="/img/loader.png"></div>
+    </div>
+    
+    
+<div class="cap">
+
+<!----> <div class="margin-vertical"></div>
+<!----> <div class="logoblock"><img class="img-logo" src="img/cs.svg"></div>
+<!----> <div class="margin-vertical"></div>
+    
+<div class="container">
+  
+        <div class="thumb-block">
+            <a href="work/one/"><div class="hover-block"><p class="text">One</p></div>
+            <img class="img-thumb" src="img/thumbs/1.jpg"></a>
+        </div>
+    
+            <!----> <div class="margin-horizontal"></div>
+    
+        <div class="thumb-block">
+            <a href="work/haiku/"><div class="hover-block"><p class="text">Two</p></div>
+            <img class="img-thumb" src="img/thumbs/2.jpg"></a>
+        </div>
+    
+<!----> <div class="margin-vertical"></div>
+    
+        <div class="thumb-block">
+            <a href="work/haiku/"><div class="hover-block"><p class="text">Three</p></div>
+            <img class="img-thumb" src="img/thumbs/3.jpg"></a>
+        </div>
+    
+            <!----> <div class="margin-horizontal"></div>
+    
+        <div class="thumb-block">
+            <a href="work/haiku/"><div class="hover-block"><p class="text">Four</p></div>
+            <img class="img-thumb" src="img/thumbs/4.jpg"></a>
+        </div>
+    
+<!----> <div class="margin-vertical"></div>
+    
+</div>
+
+</div>
+    
+</body>  
+
+</html> 
